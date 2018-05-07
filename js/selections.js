@@ -1,3 +1,8 @@
+//__ =   ===  __  __  ` `  % %  __dirname  __filename
+
+
+
+
 const one = document.querySelector('#one');
 const two = document.querySelector('#two');
 const three = document.querySelector('#three');
@@ -6,7 +11,12 @@ const four = document.querySelector('#four');
 const five = document.querySelector('#five');
 const six = document.querySelector('#six');
 
+const thumb = document.querySelectorAll('.thumb');
+console.log(thumb);
 
+for (i=0; i<thumb.length; i++){
+	thumb[i].style.display='none';
+}
 
 console.log(one);
 console.log(two);
@@ -32,6 +42,136 @@ const label3= document.querySelector('#label3');
 const label4= document.querySelector('#label4');
 const label5= document.querySelector('#label5');
 const label6= document.querySelector('#label6');
+
+
+//  Input for City & Subdivision to dynamically show up on key up in demo id 
+
+const cityInput= document.getElementById('cityInput');
+const demo5 = document.getElementById('demo5');
+
+console.log(cityInput);
+console.log(demo5)
+
+cityInput.addEventListener('keyup', function(){
+	demo5.innerHTML = cityInput.value;
+
+})
+
+const subInput= document.getElementById('subInput');
+const demo6 = document.getElementById('demo6');
+
+subInput.addEventListener('keyup', function(){
+	demo6.innerHTML = subInput.value;
+})
+
+console.log(subInput)
+
+// urban, rural, suburbs
+
+var demo7InputA ='';
+var demo7InputB ='';
+var demo7InputC ='';
+
+const urban= document.getElementById('urban');
+console.log(urban);
+
+const rural= document.getElementById('rural');
+
+const suburbs= document.getElementById('suburbs');
+
+urban.addEventListener('change', function(){
+
+	if(urban.checked){
+		demo7InputA=' Urban ';
+	}else{
+		demo7inputA.replace('Urban', '');
+		
+	}
+	
+	demo7.innerHTML += demo7InputA;
+
+})
+
+
+rural.addEventListener('change', function(){
+
+	if(rural.checked){
+		demo7InputB =' Rural ';
+	}else{
+		demo7InputB = '';
+	}
+	demo7.innerHTML += demo7InputB;
+
+})
+
+suburbs.addEventListener('change', function(){
+
+	if(suburbs.checked){
+		demo7InputC = ' Suburbs'
+	}else{
+		demo7Input = '';	
+	}
+	
+	demo7.innerHTML += demo7InputC;
+
+})
+
+
+const demo8 = document.getElementById('demo8');
+console.log(demo8)
+
+const importance = document.querySelectorAll("input[name='import']")
+
+for (i=0; i< importance.length; i++){
+	importance[i].addEventListener('change', function(e){
+		if(e.target.checked){
+			demo8.innerHTML = `On a scale of 1-10 it is a ${e.target.previousElementSibling.innerHTML} important that you build a home`;
+			console.log('It worked')
+		}else{
+			console.log('it not work')
+		}
+	})
+}
+
+
+// Loop over form 
+
+const demo9 = document.getElementById('demo9');
+console.log(demo9)
+
+const likely = document.querySelectorAll("input[name='likely']")
+
+for (i=0; i< likely.length; i++){
+	likely[i].addEventListener('change', function(e){
+		if(e.target.checked){
+			demo9.innerHTML = `On a scale of 1-10 it is a ${e.target.previousElementSibling.innerHTML} likely that you build a home`;
+			console.log('It worked')
+		}else{
+			console.log('it not work')
+		}
+	})
+}
+
+const demo10 = document.getElementById('demo10');
+console.log(demo10)
+
+const timing = document.querySelectorAll("input[name='timing']")
+
+for (i=0; i< timing.length; i++){
+	timing[i].addEventListener('change', function(e){
+		if(e.target.checked){
+			demo10.innerHTML =  `You plan to build a home ${e.target.previousElementSibling.innerHTML} `;
+			console.log('It worked')
+		}else{
+			console.log('it not work')
+		}
+	})
+}
+
+
+
+//for (i=0; i<form)
+
 
 
 
@@ -170,4 +310,18 @@ output4.innerHTML = slider4.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 slider4.oninput = function() {
     output4.innerHTML =  this.value;
+
+
+}
+
+var slider5= document.getElementById("myRange5");
+
+console.log(slider);
+
+var output11 = document.getElementById("demo11");
+output11.innerHTML = 'Square Feet: ' +slider5.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider5.oninput = function() {
+    output11.innerHTML = 'Square Feet: ' + this.value;
 }

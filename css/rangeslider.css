@@ -1,5 +1,9 @@
 .slidecontainer {
-    width: 50%;
+    width: 100%;
+}
+
+.thumb .active{
+  display: none;
 }
 
 .slider {
@@ -101,4 +105,47 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+
+.complete{
+  background-color: #CC0000;
+  color:white;
+  padding:5px;
+  margin-left:10px;
+  float:right;
+}
+
+.dateComplete{
+   background-color: #007E33;
+  color:white;
+  padding:5px;
+  margin-left:10px;
+  float:right;
+
+}
+
+
+/*  Selections Section  */
+
+.results{
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  background-color: #0099CC;
+}
+
+.homeInput{
+
+  background-color: #fafafa;
+  padding:10px;
+  border: solid 1px black;
+}
+
+#areaInput{
+  margin-bottom:20px;
+}
+#area{
+
+  padding:20px;
 }

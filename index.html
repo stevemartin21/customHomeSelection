@@ -100,36 +100,311 @@
 
 <div class="container">
 
-     <div class="card">
-        <div class="card-body">
-           <h1>Target Price </h1>
-           <div id="demo"></div>
-        </div>
+    <div class="card">
+              <div class="card-body">
+                 <h1>Home Details</h1>
+                
+              </div>
     </div>
 
-     <div class="card">
-        <div class="card-body">
-           <h1>Bedrooms </h1>
-           <div id="demo2"></div>
-        </div>
-    </div>
 
-     <div class="card">
-        <div class="card-body">
-           <h1>Bathrooms </h1>
-           <div id="demo3"></div>
-        </div>
-    </div>
+       <div class="row">
+          <div class="col">
+                  <div class="card results">
+              <div class="card-body">
+                 <h1>Target Price
+<i class="fa fa-money" aria-hidden="true"></i> </h1>
+                 <div id="demo"></div>
+              </div>
+                 </div>
+            
+                   
+                  <div class="slidecontainer">
+                    <input type="range" min="100000" max="1000000" value="" class="slider" id="myRange">
+                  </div>
+             
+          </div>
 
-     <div class="card">
-        <div class="card-body">
-           <h1>Size</h1>
-           <div id="demo4"></div>
-        </div>
-    </div>
+          <div class="col">
 
+                 <div class="card results">
+              <div class="card-body">
+                 <h1>Bedrooms<i class="fa fa-bed" aria-hidden="true"></i> </h1>
+                 <div id="demo2"></div>
+              </div>
+          </div>
+                
+                   
+                <div class="slidecontainer">
+                  <input type="range" min="0" max="10" value="" class="slider" id="myRange2">
+                </div>
+               
+          </div>
+
+
+          <div class="col">
+                   <div class="card results">
+            <div class="card-body">
+               <h1>Bathrooms
+<i class="fa fa-bathtub" aria-hidden="true"></i> </h1>
+               <div id="demo3"></div>
+            </div>
+        </div>
+                
+                    
+                  <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="" class="slider" id="myRange3">
+                  </div>
+               
+          </div>
+
+          <div class="col">
+
+                 <div class="card results">
+            <div class="card-body">
+               <h1>Sq Footage<i class="fa fa-home" aria-hidden="true"></i></h1>
+               <div id="demo4"></div>
+            </div>
+        </div>
+                
+                    
+                <div class="slidecontainer">
+                  <input type="range" min="1000" max="10000" value="" class="slider" id="myRange4">
+                </div>
+              
+          </div>
+
+      <!--End of the row -->
+      </div>
 
 </div>
+
+<div class="container" id="areaInput">
+
+   <div class="card">
+              <div class="card-body">
+                 <h1>Area</h1>
+                
+              </div>
+    </div>
+
+       <div class="row">
+          <div class="col">
+                  <div class="card results">
+              <div class="card-body">
+                 <h1>Cities <i class="fa fa-map-signs" aria-hidden="true"></i></h1>
+                 <div id="demo5"></div>
+              </div>
+                 </div>
+            
+                   
+                  <div class="slidecontainer">
+                    <input type="text" class="homeInput" placeholder="...enter cities" id="cityInput">
+                  </div>
+             
+          </div>
+
+          <div class="col">
+
+                 <div class="card results">
+              <div class="card-body">
+                 <h1>Sub<i class="fa fa-map-o" aria-hidden="true"></i></h1>
+                 <div id="demo6"></div>
+              </div>
+          </div>
+                
+                   
+                <div class="slidecontainer">
+                  <input type="text" class="homeInput" placeholder="...enter subdivisions" id="subInput">
+                </div>
+               
+          </div>
+
+
+          <div class="col">
+                   <div class="card results">
+            <div class="card-body">
+               <h1>Area<i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+               <div id="demo7"></div>
+            </div>
+        </div>
+                
+                    
+                  <div class="slidecontainer">
+
+
+<!-- Inline form with checkboxes -->
+                            <form class="form-inline" id="area">
+
+                                <!-- Default checkbox -->
+                                <div class="form-check mr-3">
+                                    <input class="form-check-input" type="checkbox" id="urban">
+                                    <label class="form-check-label" for="urban">Urban</label>
+                                </div>
+
+                                <!-- Filled-in checkbox -->
+                                <div class="form-check mr-3">
+                                    <input type="checkbox" class="form-check-input" id="rural">
+                                    <label class="form-check-label" for="rural">Rural</label>
+                                </div>
+
+                                <!-- Default checkbox -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="suburbs">
+                                    <label class="form-check-label" for="suburbs">Suburbs</label>
+                                </div>
+
+                            </form>
+<!-- Inline form with checkboxes -->
+            
+
+                  </div>
+               
+          </div>
+
+          <div class="col">
+
+                 <div class="card results">
+            <div class="card-body">
+               <h1>Lot Size<i class="fa fa-plus-square-o" aria-hidden="true"></i></h1>
+               <div id="demo11"></div>
+            </div>
+        </div>
+                
+                    
+                <div class="slidecontainer">
+                  <input type="range" min="8000" max="43560" value="" class="slider" id="myRange5">
+                </div>
+              
+          </div>
+
+         
+
+      <!--End of the row -->
+      </div>
+
+</div>
+
+<div class="container" id="areaInput">
+
+   <div class="card">
+              <div class="card-body">
+                 <h1>Customer Survey</h1>
+                
+              </div>
+    </div>
+
+       <div class="row">
+          <div class="col">
+                  <div class="card results">
+              <div class="card-body">
+                 <h1> Importance<i class="fa fa-star" aria-hidden="true"></i></h1>
+                 <div id="demo8"></div>
+              </div>
+             </div>
+                <form id="importanceForm"> <!--loop by name -->
+                    <div class="slidecontainer">
+                      <h5>On a scale of 1-10 how important is building a home</h5>
+                      <label class="form-check-label" for="import1">1</label>
+                    <input type="radio" name="import" id="import1">
+                    <label class="form-check-label" for="import2">2</label>
+                    <input type="radio" name="import" id="import2">
+                    <label class="form-check-label" for="import3">3</label>
+                    <input type="radio" name="import" id="import3">
+                     <label class="form-check-label" for="import4">4</label>
+                    <input type="radio" name="import" id="import4">
+                     <label class="form-check-label" for="import5">5</label>
+                    <input type="radio" name="import" id="import5">
+                     <label class="form-check-label" for="import6">6</label>
+                    <input type="radio" name="import" id="import6">
+                     <label class="form-check-label" for="import7">7</label>
+                    <input type="radio" name="import" id="import7">
+                     <label class="form-check-label" for="import8">8</label>
+                    <input type="radio" name="import" id="import8">
+                     <label class="form-check-label" for="import9">9</label>
+                    <input type="radio" name="import" id="import9">
+                     <label class="form-check-label" for="import10">10</label>
+                    <input type="radio" name="import" id="import10">
+                </div>
+              </form>
+                
+             
+          </div>
+
+          <div class="col">
+
+                 <div class="card results">
+              <div class="card-body">
+                 <h1>Likelyhood<i class="fa fa-balance-scale" aria-hidden="true"></i></h1>
+                 <div id="demo9"></div>
+              </div>
+          </div>
+                
+                   
+                <div class="slidecontainer">
+                  <h5>On a scale of 1-10 how likely are you to build a home</h5>
+                      <label class="form-check-label" for="like1">1</label>
+                    <input type="radio" name="likely" id="like1">
+                      <label class="form-check-label" for="like2">2</label>
+                    <input type="radio" name="likely" id="like2">
+                    <label class="form-check-label" for="like3">3</label>
+                    <input type="radio" name="likely" id="like3">
+                     <label class="form-check-label" for="like4">4</label>
+                    <input type="radio" name="likely" id="like4">
+                     <label class="form-check-label" for="like5">5</label>
+                    <input type="radio" name="likely" id="like5">
+                     <label class="form-check-label" for="like6">6</label>
+                    <input type="radio" name="likely" id="like6">
+                     <label class="form-check-label" for="like7">7</label>
+                    <input type="radio" name="likely" id="like7">
+                     <label class="form-check-label" for="like8">8</label>
+                    <input type="radio" name="likely" id="like8">
+                     <label class="form-check-label" for="like9">9</label>
+                    <input type="radio" name="likely" id="like9">
+                     <label class="form-check-label" for="like10">10</label>
+                    <input type="radio" name="likely" id="like10">
+                </div>
+              
+          </div>
+
+
+      <div class="col">
+
+                 <div class="card results">
+              <div class="card-body">
+                 <h1>Timing<i class="fa fa-balance-scale" aria-hidden="true"></i></h1>
+                 <div id="demo10"></div>
+              </div>
+          </div>
+                
+                   
+                <div class="slidecontainer">
+                  <h5>When do you anticipate building a home</h5>
+                      <label class="form-check-label" for="timing">Immediately</label>
+                    <input type="radio" name="timing" id="timing">
+                      <label class="form-check-label" for="timing">30-60 days</label>
+                    <input type="radio" name="timing" id="timing">
+                    <label class="form-check-label" for="timing">90+ Days</label>
+                    <input type="radio" name="timing" id="timing">
+                     <label class="form-check-label" for="timing">6 Months</label>
+                    <input type="radio" name="timing" id="timing">
+                     <label class="form-check-label" for="timing">1 Year</label>
+                    <input type="radio" name="timing" id="timing">
+                     <label class="form-check-label" for="timing">More than 1 year</label>
+                    <input type="radio" name="timing" id="timing">
+                   
+                </div>
+              
+          </div>
+
+         
+
+      <!--End of the row -->
+      </div>
+
+</div>
+
+
 
 
 
@@ -363,192 +638,117 @@
 </div>
 
 
-<div class="container">
 
-    <div class="card">
-        <div class="card-body">
-           <h1>Price Range</h1>
-          
-        </div>
+ <div class="container">
+          <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Exterior Features</h1> 
+                            </div>
+                        </div>
+                    <label class="container2">Full Landscaping
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Fencing
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Sprinkler System
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">RV Parking
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+          </div>
+
+                   
+
+
+            <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                               <h1>Lot Details</h1> 
+                            </div>
+                        </div>
+                        <!-- Default checkbox -->
+                    <label class="container2">Big Lot
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Mountain View
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Lake View
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Ready to build
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+          </div>
+
+          <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                               <h1>Special Features</h1>  
+                            </div>
+                        </div>
+                        <!-- Default checkbox -->
+                    <label class="container2">3rd Car Garage
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Bonus Room
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Theater in Basement
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container2">Master Suite
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
     </div>
-
-   
-
-<div class="slidecontainer">
-  
-  
-
-  <input type="range" min="100000" max="1000000" value="" class="slider" id="myRange">
-</div>
-
-</div>
-
-<div class="container">
-
-    <div class="card">
-        <div class="card-body">
-           <h1>Bedrooms</h1>
-          
-        </div>
-    </div>
-
-   
-
-<div class="slidecontainer">
-  
-  
-  
-  <input type="range" min="0" max="10" value="" class="slider" id="myRange2">
-</div>
-
-</div>
-
-<div class="container">
-
-    <div class="card">
-        <div class="card-body">
-           <h1>Bathrooms</h1>
-          
-        </div>
-    </div>
-
-   
-
-<div class="slidecontainer">
-  
-  
-  
-  <input type="range" min="0" max="10" value="" class="slider" id="myRange3">
-</div>
-
-</div>
-
-<div class="container">
-
-    <div class="card">
-        <div class="card-body">
-           <h1>Total Square Footage</h1>
-          
-        </div>
-    </div>
-
-   
-
-<div class="slidecontainer">
-  
-  
- 
-  <input type="range" min="1000" max="10000" value="" class="slider" id="myRange4">
-</div>
-
-</div>
-
-<div class="container">
-
-    <div class="card">
-        <div class="card-body">
-           <h1>Exterior Features</h1>
-          
-        </div>
-    </div>
-
-    <!-- Default checkbox -->
-
-
-<label class="container2">Full Landscaping
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Fencing
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Sprinkler System
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">RV Parking
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-</div>
-
 
 <div class="container">
 
-    <div class="card">
-        <div class="card-body">
-           <h1>Lot Details</h1>
-          
-        </div>
-    </div>
+       <div class="card">
+              <div class="card-body">
+                 <h1>Additional Comments</h1>
+                
+              </div>
+       </div>
 
-    <!-- Default checkbox -->
-
-
-<label class="container2">Big Lot
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Mountain View
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Lake View
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Ready to build
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
+       <div class="md-form">
+            <i class="fa fa-pencil prefix"></i>
+            <textarea type="text" id="textareaPrefix" class="form-control md-textarea" rows="3"></textarea>
+            <label for="textareaPrefix">Write Comments</label>
 </div>
 
-<div class="container">
-
-    <div class="card">
-        <div class="card-body">
-           <h1>Special Features</h1>
-          
-        </div>
-    </div>
-
-    <!-- Default checkbox -->
-
-
-<label class="container2">3rd Car Garage
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Bonus Room
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Theater in Basement
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="container2">Master Suite
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
 
 </div>
 
 
 
  <div class="container" id="faq">
+      <div class="card results">
+        <div class="card-body">
+           <h1> Let's build it<i class="fa fa-home" aria-hidden="true"></i>
+</h1>
+        </div>
+    </div>
         <form>
             <p class="h4 text-center mb-4">Contact Us</p>
 
@@ -600,7 +800,7 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
     <script type="text/javascript" src="js/selections.js"></script>
-    <script src="jquery.min.js"></script>
+   
 
     <script src="js/rangeslider.min.js"></script>
 
